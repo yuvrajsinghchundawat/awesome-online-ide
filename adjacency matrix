@@ -1,0 +1,30 @@
+
+#include <stdio.h>
+int main()
+{
+	int A[20][20]={0},nodes,n,i,j,st,end;
+	printf("Enter total no. of nodes\n");
+	scanf("%d",&nodes);
+	printf("Enter total no. of edges\n");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		printf("enter the starting point");
+		scanf("%d",&st);
+		printf("enter the ending point");
+		scanf("%d",&end);
+		A[st][end]=1;
+		
+	}
+	for(i=1;i<=nodes;i++)
+	{
+		for(j=1;j<=nodes;j++)
+		{
+			printf("%4d",A[i][j]);
+		}
+		printf("\n");
+	}
+
+
+    return 0;
+}
